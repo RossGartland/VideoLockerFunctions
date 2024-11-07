@@ -1,5 +1,5 @@
 config = dict(
-    USERNAME='rossuser',
-    PASSWORD='mitsy123@',
+    USERNAME='USERNAME',
+    PASSWORD='PASSWORD',
     SECRET_KEY='my_secret'
 )

@@ -6,11 +6,11 @@ import config
 import json
 import collections
 
-server = 'com682-rossg.database.windows.net'
-database = 'com682RDatabase',
+server = 'server'
+database = 'database',
 table = 'users',
 driver = '{ODBC Driver 17 for SQL Server}'
-app_config = 'Endpoint=https://rg-secrets-a2.azconfig.io;Id=GCgR-l8-s0:edHmEHeCDeA3x1KHcmv7;Secret=jdIKdPPslmeJQlsQkdTyRg8aNluYh68ZI35csCCl8kc='
+app_config = 'app_config'
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:

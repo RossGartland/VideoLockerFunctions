@@ -5,9 +5,9 @@ from azure.cosmos import CosmosClient, PartitionKey, partition_key
 import uuid
 import json
 
-blobCnnString = 'DefaultEndpointsProtocol=https;AccountName=rossgartland;AccountKey=teSnaZ/VrtRUm+ENzTDsOoTrH+XbXy8DYkm3Iyoq4DV8tNlZqnpGxhvJY0EZD2SQCfoFKK8Jnboa+AStRU8dlA==;EndpointSuffix=core.windows.net'
-cosmosEndpoint = 'https://rossgartlandcosmos.documents.azure.com:443/'
-cosmosKey = 'dFfKP7CY0mO9DEONIEV3wuWOYYULjpQC75crxAtcgOQQ0kLMyBDV3bA4jk0TmOGAtrz5dHwqXwYAACDb7EAxSQ=='
+blobCnnString = 'blobCnnString'
+cosmosEndpoint = 'cosmosEndpoint'
+cosmosKey = 'cosmosKey'
 cosmos = CosmosClient(cosmosEndpoint, cosmosKey)
 partition_key = PartitionKey(path='/id')
 

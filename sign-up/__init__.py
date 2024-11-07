@@ -7,12 +7,12 @@ import pyodbc
 import bcrypt
 import uuid
 
-server = 'com682-rossg.database.windows.net'
-database = 'com682RDatabase',
+server = 'server'
+database = 'database',
 table = 'users',
 driver = '{ODBC Driver 17 for SQL Server}'
-app_config = 'Endpoint=https://rg-secrets-a2.azconfig.io;Id=GCgR-l8-s0:edHmEHeCDeA3x1KHcmv7;Secret=jdIKdPPslmeJQlsQkdTyRg8aNluYh68ZI35csCCl8kc='
-storageCNNString = 'DefaultEndpointsProtocol=https;AccountName=rossgartland;AccountKey=teSnaZ/VrtRUm+ENzTDsOoTrH+XbXy8DYkm3Iyoq4DV8tNlZqnpGxhvJY0EZD2SQCfoFKK8Jnboa+AStRU8dlA==;EndpointSuffix=core.windows.net'
+app_config = 'app_config'
+storageCNNString = 'storageCNNString'
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
@@ -32,7 +32,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     cnnString = 'DRIVER=' + driver + \
         ';SERVER=tcp:' + server + \
-        ',1433;DATABASE=com682RDatabase;UID=' + username + \
+        ',1433;DATABASE=database;UID=' + username + \
         ';PWD=' + password + ';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
 
     conn = pyodbc.connect(cnnString)

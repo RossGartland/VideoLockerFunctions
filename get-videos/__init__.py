@@ -5,8 +5,8 @@ from azure.storage.blob import BlobServiceClient, BlobClient
 import uuid
 import json
 
-cosmosEndpoint = 'https://rossgartlandcosmos.documents.azure.com:443/'
-cosmosKey = 'dFfKP7CY0mO9DEONIEV3wuWOYYULjpQC75crxAtcgOQQ0kLMyBDV3bA4jk0TmOGAtrz5dHwqXwYAACDb7EAxSQ=='
+cosmosEndpoint = 'cosmosEndpoint'
+cosmosKey = 'cosmosKey'
 cosmos = CosmosClient(cosmosEndpoint, cosmosKey)
 partition_key = PartitionKey(path='/id')
 

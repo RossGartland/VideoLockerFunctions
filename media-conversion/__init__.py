@@ -17,10 +17,10 @@ import uuid
 import sys
 import random
 
-subscription_id = 'cea8c3bb-1cec-4cdf-8f2d-c579ad6a42f9'
-resource_group_name = 'com682-assignment2'
-account_name = 'rossgartlandmediaservice'
-blobCnnString = 'DefaultEndpointsProtocol=https;AccountName=rossgartland;AccountKey=teSnaZ/VrtRUm+ENzTDsOoTrH+XbXy8DYkm3Iyoq4DV8tNlZqnpGxhvJY0EZD2SQCfoFKK8Jnboa+AStRU8dlA==;EndpointSuffix=core.windows.net'
+subscription_id = 'subscription_id'
+resource_group_name = 'resource_group_name'
+account_name = 'account_name'
+blobCnnString = 'blobCnnString'
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
